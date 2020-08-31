@@ -1,7 +1,6 @@
 exports.config = {
   runner: "local",
-  port: 4444,
-
+  
   specs: ["./test/specs/**/*.js"],
 
   exclude: [],
@@ -41,7 +40,7 @@ exports.config = {
 
   bail: 0,
 
-  baseUrl: "http://localhost:3000",
+  baseUrl: "localhost:3000",
 
   waitforTimeout: 10000,
 
