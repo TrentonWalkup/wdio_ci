@@ -5,5 +5,6 @@ describe("The contact section", () => {
   it(`should render (${utils.viewPort})`, () => {
     browser.url("/");
     expect(LandingPage.Contact.contactForm).toExist;
+    console.log(LandingPage.Contact.contactForm)
   });
 });
