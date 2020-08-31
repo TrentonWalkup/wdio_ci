@@ -10,7 +10,6 @@ const sectionTitles = [
 describe("My landing page", () => {
   it(`should have the correct section titles (${utils.viewPort})`, () => {
     browser.url("/");
-    console.log();
     LandingPage.Body.cardSections.forEach((title) => {
       expect(sectionTitles).toContain(title.getText());
     });
