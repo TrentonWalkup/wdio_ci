@@ -13,8 +13,7 @@ describe("My landing page", () => {
     LandingPage.Body.cardSections.forEach((title) => {
       console.log(title.getText())
       expect(sectionTitles).toContain(title.getText());
-      let a = $('#body > div.header')
-      console.log(3+1)
+      expect(4).toEqual(1)
     });
   });
 });
