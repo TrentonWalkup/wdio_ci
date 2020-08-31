@@ -14,7 +14,7 @@ describe("My landing page", () => {
       console.log(title.getText())
       expect(sectionTitles).toContain(title.getText());
       let a = $('#body > div.header')
-      console.log(a)
+      console.log(3+1)
     });
   });
 });
