@@ -30,7 +30,7 @@ jobs:
       - run:
           command: npm run start
           background: true
-      - run: npm run build
+   
       # run tests!
       - run: npm run test
 
