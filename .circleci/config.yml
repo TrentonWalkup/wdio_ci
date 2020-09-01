@@ -63,18 +63,18 @@ jobs:
           # fallback to using the latest cache if no exact match is found
           - v1-dependencies-
 
-        - run:
+      - run:
         name: Start Selenium in background 
         command: |
           npm start selenium
         background: true
-       - run:
+      - run:
         name: Start App in background 
         command: |
           npm run start
         background: true
 
-    - run:
+      - run:
         name: Waiting for Selenium server to be ready
         command: |
           for i in `seq 1 10`;
