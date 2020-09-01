@@ -8,5 +8,6 @@ describe("My landing page", () => {
     browser.url('https://www.wikipedia.org')
     let a = $('#www-wikipedia-org > div.central-textlogo > h1 > span')
     console.log(a.getText())
+    console.log(process.env)
   });
 });
