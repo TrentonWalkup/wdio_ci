@@ -1,6 +1,6 @@
 exports.config = {
   runner: "local",
-  port: 4444,
+  port: 9515,
   specs: ["./test/specs/**/*.js"],
 
   exclude: [],
