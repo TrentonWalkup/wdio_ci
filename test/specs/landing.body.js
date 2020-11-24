@@ -8,7 +8,7 @@ const sectionTitles = [
 ];
 
 describe('My landing page', () => {
-  it(`should have the correct section titles (${utils.viewPort})`, () => {
+  it(`should have the correct section titles`, () => {
     browser.url('/');
     // LandingPage.Body.cardSections.forEach((title) => {
     //   console.log(title.getText())
