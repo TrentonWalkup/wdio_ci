@@ -16,7 +16,7 @@ exports.config = {
     },
   ],
 
-  logLevel: 'info',
+  logLevel: 'silent',
 
   bail: 0,
 
