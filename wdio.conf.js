@@ -28,6 +28,8 @@ exports.config = {
 
   connectionRetryCount: 3,
 
+  services: ['chromedriver'],
+
   framework: 'mocha',
 
   reporters: ['spec'],
