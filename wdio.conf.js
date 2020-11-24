@@ -20,7 +20,7 @@ exports.config = {
 
   bail: 0,
 
-  // baseUrl: '/',
+  baseUrl: 'http://localhost:3000',
 
   waitforTimeout: 10000,
 
