@@ -9,17 +9,10 @@ exports.config = {
 
   capabilities: [
     {
-      maxInstances: 5,
-
       browserName: 'chrome',
       'goog:chromeOptions': {
-        args: ['--window-size=1200,900'], //average size monitor
-        prefs: {
-          'profile.managed_default_content_settings.popups': 2,
-          'profile.managed_default_content_settings.notifications': 2,
-        },
+        headless: true,
       },
-      acceptInsecureCerts: true,
     },
   ],
 
@@ -34,8 +27,6 @@ exports.config = {
   connectionRetryTimeout: 120000,
 
   connectionRetryCount: 3,
-
-  services: ['chromedriver'],
 
   framework: 'mocha',
 
