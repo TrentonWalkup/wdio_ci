@@ -23,11 +23,14 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
-      - name: npm install, build, and test
+      - name: install yarn
+        run: npm install -g yarn
+      - name: build app
         run: |
           npm ci
           npm run build --if-present
-          npm start
-          ./node_modules/.bin/wdio wdio.conf.js
+          yarn start
+      - name: test
+        run: ./node_modules/.bin/wdio wdio.conf.js
         env:
           CI: true
