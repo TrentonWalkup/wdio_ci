@@ -1,6 +1,6 @@
 exports.config = {
   runner: 'local',
-  port: 9515,
+
   specs: ['./test/specs/**/*.js'],
 
   exclude: [],
@@ -28,7 +28,7 @@ exports.config = {
 
   connectionRetryCount: 3,
 
-  services: ['chromedriver'],
+  // services: ['chromedriver'],
 
   framework: 'mocha',
 
