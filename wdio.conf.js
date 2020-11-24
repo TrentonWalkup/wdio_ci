@@ -1,7 +1,7 @@
 exports.config = {
-  runner: "local",
-
-  specs: ["./test/specs/**/*.js"],
+  runner: 'local',
+  port: 9515,
+  specs: ['./test/specs/**/*.js'],
 
   exclude: [],
 
@@ -11,36 +11,23 @@ exports.config = {
     {
       maxInstances: 5,
 
-      browserName: "chrome",
-      "goog:chromeOptions": {
-        args: ["--window-size=200,1000"], //mobile responsive
+      browserName: 'chrome',
+      'goog:chromeOptions': {
+        args: ['--window-size=1200,900'], //average size monitor
         prefs: {
-          "profile.managed_default_content_settings.popups": 2,
-          "profile.managed_default_content_settings.notifications": 2,
-        },
-      },
-      acceptInsecureCerts: true,
-    },
-    {
-      maxInstances: 5,
-
-      browserName: "chrome",
-      "goog:chromeOptions": {
-        args: ["--window-size=1200,900"], //average size monitor
-        prefs: {
-          "profile.managed_default_content_settings.popups": 2,
-          "profile.managed_default_content_settings.notifications": 2,
+          'profile.managed_default_content_settings.popups': 2,
+          'profile.managed_default_content_settings.notifications': 2,
         },
       },
       acceptInsecureCerts: true,
     },
   ],
 
-  logLevel: "silent",
+  logLevel: 'silent',
 
   bail: 0,
 
-  baseUrl: "http://localhost:3000",
+  baseUrl: 'http://localhost:3000',
 
   waitforTimeout: 10000,
 
@@ -48,14 +35,14 @@ exports.config = {
 
   connectionRetryCount: 3,
 
-  services: ["chromedriver"],
+  services: ['chromedriver'],
 
-  framework: "mocha",
+  framework: 'mocha',
 
-  reporters: ["spec"],
+  reporters: ['spec'],
 
   mochaOpts: {
-    ui: "bdd",
+    ui: 'bdd',
     timeout: 60000,
   },
 };
