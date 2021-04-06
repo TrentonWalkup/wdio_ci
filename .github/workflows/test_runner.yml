@@ -26,7 +26,7 @@ jobs:
       - name: build app
         run: |
           npm ci
-          yarn update
+          npm install
           npm start & npx wait-on http://localhost:3000
       - name: test
         run: ./node_modules/.bin/wdio wdio.conf.js
